@@ -19,8 +19,10 @@ namespace HospitalSystemManagement
             // Release Stage
             
               Database.SetInitializer<DataContext>(new MigrateDatabaseToLatestVersion<DataContext, Migrations.Configuration>());
-
-
+            DataContext dataContext = new DataContext();
+          
+            dataContext.Users.Add(new UserAdmin() { Username = "admin", Password = "123" });
+            dataContext.SaveChanges();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());

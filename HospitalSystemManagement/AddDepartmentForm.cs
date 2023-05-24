@@ -49,8 +49,8 @@ namespace HospitalSystemManagement
                 context.Departments.Add(department);
                 context.SaveChanges();
                 
-                Main main = new Main();
-                main.btnDept.PerformClick();
+                //Main main = new Main();
+                //main.btnDept.PerformClick();
                 
                 Close();
             }
