@@ -16,11 +16,9 @@ F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\H
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.AddStaffForm.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.DoctorForm.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.FloorrsOfHospital.resources
-F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.History.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.LoginForm.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Main.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.PatientForm.resources
-F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Payment.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Profile.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Properties.Resources.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Reservation.resources
@@ -33,3 +31,14 @@ F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\H
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.pdb
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Migrations.init.resources
 F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.DepartmentForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.PaymentForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Migrations.init1.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\bin\Debug\DGV Printer.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.PrintForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.HistoryForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.InventoryForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.MedicalHistoryForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Migrations.init2.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.Resources.AddMedicalForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.AddInventoryForm.resources
+F:\ITI\Advanced C#\HospitalSystemManagement\HospitalSystemManagement\obj\Debug\HospitalSystemManagement.InveForm.resources

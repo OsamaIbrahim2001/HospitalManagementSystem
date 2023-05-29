@@ -31,14 +31,11 @@ namespace HospitalSystemManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDone = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSalary = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -47,27 +44,18 @@ namespace HospitalSystemManagement
             this.txtJopTitle = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtSalary = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnDone
-            // 
-            this.btnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDone.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnDone.ForeColor = System.Drawing.Color.White;
-            this.btnDone.Location = new System.Drawing.Point(189, 398);
-            this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(107, 34);
-            this.btnDone.TabIndex = 64;
-            this.btnDone.Text = "Save";
-            this.btnDone.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(62, 306);
+            this.label11.Location = new System.Drawing.Point(62, 253);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 21);
             this.label11.TabIndex = 63;
@@ -77,21 +65,11 @@ namespace HospitalSystemManagement
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(62, 256);
+            this.label9.Location = new System.Drawing.Point(62, 203);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 21);
             this.label9.TabIndex = 62;
             this.label9.Text = "Address : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(83, 202);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 21);
-            this.label5.TabIndex = 61;
-            this.label5.Text = "Salary :";
             // 
             // label2
             // 
@@ -114,37 +92,28 @@ namespace HospitalSystemManagement
             this.lblClose.TabIndex = 1;
             this.lblClose.Text = "x";
             this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Pangolin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = global::HospitalSystemManagement.Properties.Resources.addBig1;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(7, 6);
+            this.label1.Location = new System.Drawing.Point(7, -4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 30);
+            this.label1.Size = new System.Drawing.Size(170, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "     Employee";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txtSalary
-            // 
-            this.txtSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtSalary.Location = new System.Drawing.Point(153, 197);
-            this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(266, 33);
-            this.txtSalary.TabIndex = 68;
-            this.txtSalary.Enter += new System.EventHandler(this.txtName_Enter);
-            this.txtSalary.Leave += new System.EventHandler(this.txtName_Leave);
             // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtAddress.Location = new System.Drawing.Point(153, 250);
+            this.txtAddress.Location = new System.Drawing.Point(153, 197);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(266, 33);
             this.txtAddress.TabIndex = 67;
@@ -160,6 +129,7 @@ namespace HospitalSystemManagement
             this.txtPhone.Size = new System.Drawing.Size(266, 33);
             this.txtPhone.TabIndex = 66;
             this.txtPhone.Enter += new System.EventHandler(this.txtName_Enter);
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             this.txtPhone.Leave += new System.EventHandler(this.txtName_Leave);
             // 
             // txtName
@@ -198,7 +168,7 @@ namespace HospitalSystemManagement
             // 
             this.txtJopTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtJopTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtJopTitle.Location = new System.Drawing.Point(154, 301);
+            this.txtJopTitle.Location = new System.Drawing.Point(154, 248);
             this.txtJopTitle.Name = "txtJopTitle";
             this.txtJopTitle.Size = new System.Drawing.Size(266, 33);
             this.txtJopTitle.TabIndex = 69;
@@ -223,26 +193,80 @@ namespace HospitalSystemManagement
             this.label6.TabIndex = 70;
             this.label6.Text = "BirthDate : ";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Window;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdate.Location = new System.Drawing.Point(178, 409);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(118, 45);
+            this.btnUpdate.TabIndex = 75;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Window;
+            this.btnAdd.FlatAppearance.BorderSize = 2;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAdd.Location = new System.Drawing.Point(178, 409);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(118, 45);
+            this.btnAdd.TabIndex = 76;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(82, 302);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 21);
+            this.label5.TabIndex = 77;
+            this.label5.Text = "Salary :";
+            // 
+            // txtSalary
+            // 
+            this.txtSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.txtSalary.Location = new System.Drawing.Point(152, 298);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(266, 33);
+            this.txtSalary.TabIndex = 78;
+            // 
             // AddStaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(469, 442);
+            this.ClientSize = new System.Drawing.Size(469, 466);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtSalary);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtJopTitle);
-            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddStaffForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -255,14 +279,11 @@ namespace HospitalSystemManagement
         }
 
         #endregion
-        private Button btnDone;
         private Label label11;
         private Label label9;
-        private Label label5;
         private Label label2;
         private Label lblClose;
         private Label label1;
-        private TextBox txtSalary;
         private TextBox txtAddress;
         private TextBox txtPhone;
         private TextBox txtName;
@@ -271,5 +292,9 @@ namespace HospitalSystemManagement
         private TextBox txtJopTitle;
         private DateTimePicker dateTimePicker1;
         private Label label6;
+        private Button btnUpdate;
+        private Button btnAdd;
+        private Label label5;
+        private TextBox txtSalary;
     }
 }

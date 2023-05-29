@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Project.Model
+namespace HospitalSystemManagement.Model
 {
-    internal class UserAdmin
+    public class UserAdmin
     {
         public int ID { get; set; }
 

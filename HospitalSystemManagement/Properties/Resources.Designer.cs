@@ -73,6 +73,36 @@ namespace HospitalSystemManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _777497_200 {
+            get {
+                object obj = ResourceManager.GetObject("777497-200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addBig1 {
+            get {
+                object obj = ResourceManager.GetObject("addBig1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dash_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Dash-removebg-preview", resourceCulture);
@@ -173,6 +203,16 @@ namespace HospitalSystemManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inventory {
+            get {
+                object obj = ResourceManager.GetObject("inventory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock__3_ {
             get {
                 object obj = ResourceManager.GetObject("lock (3)", resourceCulture);
@@ -186,6 +226,16 @@ namespace HospitalSystemManagement.Properties {
         internal static System.Drawing.Bitmap logout_re {
             get {
                 object obj = ResourceManager.GetObject("logout-re", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medical {
+            get {
+                object obj = ResourceManager.GetObject("medical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,12 +1,8 @@
-﻿using C_Project.Model;
+﻿using HospitalSystemManagement.Model;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HospitalSystemManagement
@@ -21,7 +17,7 @@ namespace HospitalSystemManagement
             fillData();
         }
        public void fillData() {
-            var departments = dataContext.Departments.Select(dept => new { dept.ID, dept.Name, dept.Description }).ToList();
+            var departments = dataContext.Departments.Select(dept => new { dept.ID, dept.Name, dept.Description,Doctors=dept.Doctors.Count,Rooms=dept.Rooms.Count}).ToList();
             dgvDepartment.DataSource = departments;
         }
         private void txtSearch_Enter(object sender, EventArgs e)
@@ -67,7 +63,10 @@ namespace HospitalSystemManagement
             }
             else
             {
-                var dept = dataContext.Departments.Where(d => d.ID == int.Parse(dgvDepartment.CurrentRow.Cells[0].Value.ToString())).First();
+                int id = int.Parse(dgvDepartment.CurrentRow.Cells[0].Value.ToString());
+                var dept = dataContext.Departments.Where(d => d.ID == id).First();
+                AddDepartmentForm addDepartmentForm = new AddDepartmentForm(dept);
+                addDepartmentForm.ShowDialog();
             }
         }
 
@@ -79,12 +78,37 @@ namespace HospitalSystemManagement
             }
             else
             {
-               int x = int.Parse((dgvDepartment.CurrentRow.Cells[0].Value).ToString());
-                var dept = dataContext.Departments.Where(d => d.ID ==x ).First();
-                dataContext.Departments.Remove(dept);
-                dataContext.SaveChanges();
-                fillData();
+                if (MessageBox.Show("Do you want to delete this field", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    int x = int.Parse((dgvDepartment.CurrentRow.Cells[0].Value).ToString());
+                    var dept = dataContext.Departments.Where(d => d.ID == x).First();
+                    dataContext.Departments.Remove(dept);
+                    dataContext.SaveChanges();
+                    fillData();
+                }
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var depts = dataContext.Departments.Where(d=>d.Name.Contains(txtSearch.Text)||d.Description.Contains(txtSearch.Text)).Select(dept => new { dept.ID, dept.Name, dept.Description, Doctors = dept.Doctors.Count, Rooms = dept.Rooms.Count }).ToList();
+            dgvDepartment.DataSource = depts;
+        }
+
+        private void lblCancel_Click(object sender, EventArgs e)
+        {
+            fillData();
+            txtSearch.Clear();
+        }
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtSearch.Text)) lblCancel.Visible = false;
+            else lblCancel.Visible = true;
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

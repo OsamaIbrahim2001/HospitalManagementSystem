@@ -86,7 +86,7 @@ namespace HospitalSystemManagement
         private void btnPayments_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Payment payment = new Payment() { TopLevel = false };
+            PaymentForm payment = new PaymentForm() { TopLevel = false };
             panel2.Controls.Add(payment);
             payment.Show();
         }
@@ -94,7 +94,7 @@ namespace HospitalSystemManagement
         private void btnHistory_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            History history = new History() { TopLevel = false };
+            HistoryForm history = new HistoryForm() { TopLevel = false };
             panel2.Controls.Add(history);
             history.Show();
         }
@@ -116,6 +116,22 @@ namespace HospitalSystemManagement
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            InveForm inventoryForm = new InveForm() { TopLevel=false};
+            panel2.Controls.Add(inventoryForm);
+            inventoryForm.Show();
+        }
+
+        private void btnMedical_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+            MedicalHistoryForm medicalHistoryForm = new MedicalHistoryForm() { TopLevel = false };
+            panel2.Controls.Add(medicalHistoryForm);
+            medicalHistoryForm.Show();
         }
     }
 }

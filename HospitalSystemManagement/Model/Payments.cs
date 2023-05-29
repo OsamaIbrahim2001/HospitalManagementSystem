@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Project.Model
+namespace HospitalSystemManagement.Model
 {
-    internal class Payments
+    public class Payments
     {
         public int ID { get; set; }
         public string PatientName { get; set; }

@@ -1,4 +1,4 @@
-﻿using C_Project.Model;
+﻿using HospitalSystemManagement.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +13,25 @@ namespace HospitalSystemManagement
 {
     public partial class AddDepartmentForm : Form
     {
-        
+        Department dept;
+        DataContext context;
         public AddDepartmentForm()
+        { 
+            InitializeComponent();
+            btnUpdate.Visible = false;
+            btnSaveFllower.Visible = true;
+            context = new DataContext();
+        }
+        internal AddDepartmentForm(Department dept)
         {
             InitializeComponent();
+            btnUpdate.Visible = true;
+            btnSaveFllower.Visible = false;
+            this.dept=dept;
+            context= new DataContext();
+            txtNameOfDept.Text = dept.Name;
+            txtDescriptionOfDept.Text = dept.Description;
+
         }
 
         private void txtNameOfDept_Enter(object sender, EventArgs e)
@@ -43,17 +58,30 @@ namespace HospitalSystemManagement
                 lblError.Visible = true;
             }
             else{
-                DataContext context = new DataContext();
                 Department department = new Department()
                 {Name=txtNameOfDept.Text,Description=txtNameOfDept.Text };
                 context.Departments.Add(department);
                 context.SaveChanges();
-                
-                //Main main = new Main();
-                //main.btnDept.PerformClick();
-                
                 Close();
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (txtNameOfDept.Text == "" || txtDescriptionOfDept.Text == "")
+            {
+                lblError.Visible = true;
+            }
+            else
+            {
+               Department department = context.Departments.Where(d => d.ID == dept.ID).First();
+                department.Name = txtNameOfDept.Text;
+                department.Description= txtDescriptionOfDept.Text;
+                context.SaveChanges();
+                Close();
+            }
+
+
         }
     }
 }

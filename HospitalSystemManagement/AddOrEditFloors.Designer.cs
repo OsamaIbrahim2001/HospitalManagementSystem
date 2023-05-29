@@ -32,66 +32,27 @@ namespace HospitalSystemManagement
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblCloaseFllower = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtNameOfFloower = new System.Windows.Forms.TextBox();
-            this.btnSaveFllower = new System.Windows.Forms.Button();
+            this.txtNameOfFloor = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.txtNumOfRoom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.Floor = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(10, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 25);
+            this.label2.Size = new System.Drawing.Size(174, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "Floor Description";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.panel1.Controls.Add(this.lblCloaseFllower);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 39);
-            this.panel1.TabIndex = 3;
-            // 
-            // lblCloaseFllower
-            // 
-            this.lblCloaseFllower.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblCloaseFllower.AutoSize = true;
-            this.lblCloaseFllower.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.lblCloaseFllower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblCloaseFllower.Font = new System.Drawing.Font("Poppins Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblCloaseFllower.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCloaseFllower.Location = new System.Drawing.Point(400, 1);
-            this.lblCloaseFllower.Name = "lblCloaseFllower";
-            this.lblCloaseFllower.Size = new System.Drawing.Size(29, 34);
-            this.lblCloaseFllower.TabIndex = 4;
-            this.lblCloaseFllower.Text = "X";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 30);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Add Floor";
             // 
             // panel2
             // 
@@ -102,32 +63,33 @@ namespace HospitalSystemManagement
             this.panel2.Size = new System.Drawing.Size(429, 9);
             this.panel2.TabIndex = 0;
             // 
-            // txtNameOfFloower
+            // txtNameOfFloor
             // 
-            this.txtNameOfFloower.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtNameOfFloower.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtNameOfFloower.Location = new System.Drawing.Point(10, 119);
-            this.txtNameOfFloower.Name = "txtNameOfFloower";
-            this.txtNameOfFloower.Size = new System.Drawing.Size(410, 33);
-            this.txtNameOfFloower.TabIndex = 0;
-            this.txtNameOfFloower.Enter += new System.EventHandler(this.txtNameOfFloower_Enter);
-            this.txtNameOfFloower.Leave += new System.EventHandler(this.txtNameOfFloower_Leave);
+            this.txtNameOfFloor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtNameOfFloor.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.txtNameOfFloor.Location = new System.Drawing.Point(10, 119);
+            this.txtNameOfFloor.Name = "txtNameOfFloor";
+            this.txtNameOfFloor.Size = new System.Drawing.Size(410, 33);
+            this.txtNameOfFloor.TabIndex = 0;
+            this.txtNameOfFloor.Enter += new System.EventHandler(this.txtNameOfFloower_Enter);
+            this.txtNameOfFloor.Leave += new System.EventHandler(this.txtNameOfFloower_Leave);
             // 
-            // btnSaveFllower
+            // btnSave
             // 
-            this.btnSaveFllower.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveFllower.BackColor = System.Drawing.SystemColors.Window;
-            this.btnSaveFllower.FlatAppearance.BorderSize = 2;
-            this.btnSaveFllower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveFllower.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnSaveFllower.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(149)))), ((int)(((byte)(153)))));
-            this.btnSaveFllower.Location = new System.Drawing.Point(149, 270);
-            this.btnSaveFllower.Name = "btnSaveFllower";
-            this.btnSaveFllower.Size = new System.Drawing.Size(118, 42);
-            this.btnSaveFllower.TabIndex = 2;
-            this.btnSaveFllower.Text = "Save";
-            this.btnSaveFllower.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSave.FlatAppearance.BorderSize = 2;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSave.Location = new System.Drawing.Point(149, 270);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(142, 45);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSaveFllower_Click);
             // 
             // txtNumOfRoom
             // 
@@ -137,18 +99,77 @@ namespace HospitalSystemManagement
             this.txtNumOfRoom.Name = "txtNumOfRoom";
             this.txtNumOfRoom.Size = new System.Drawing.Size(410, 33);
             this.txtNumOfRoom.TabIndex = 4;
+            this.txtNumOfRoom.Text = "0";
+            this.txtNumOfRoom.TextChanged += new System.EventHandler(this.txtNumOfRoom_TextChanged);
             this.txtNumOfRoom.Enter += new System.EventHandler(this.txtNameOfFloower_Enter);
+            this.txtNumOfRoom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumOfRoom_KeyPress);
             this.txtNumOfRoom.Leave += new System.EventHandler(this.txtNameOfFloower_Leave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(9, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 25);
+            this.label3.Size = new System.Drawing.Size(186, 34);
             this.label3.TabIndex = 5;
             this.label3.Text = "Number of Rooms";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
+            this.panel1.Controls.Add(this.lblClose);
+            this.panel1.Controls.Add(this.Floor);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(429, 39);
+            this.panel1.TabIndex = 11;
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblClose.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblClose.Location = new System.Drawing.Point(402, 6);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(23, 25);
+            this.lblClose.TabIndex = 1;
+            this.lblClose.Text = "x";
+            this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // Floor
+            // 
+            this.Floor.AutoSize = true;
+            this.Floor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
+            this.Floor.Font = new System.Drawing.Font("Pangolin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Floor.ForeColor = System.Drawing.Color.White;
+            this.Floor.Image = global::HospitalSystemManagement.Properties.Resources.addBig1;
+            this.Floor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Floor.Location = new System.Drawing.Point(7, -5);
+            this.Floor.Name = "Floor";
+            this.Floor.Size = new System.Drawing.Size(118, 41);
+            this.Floor.TabIndex = 0;
+            this.Floor.Text = "     Floor";
+            this.Floor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Window;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdate.Location = new System.Drawing.Point(149, 270);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(142, 45);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AddOrEditFloors
             // 
@@ -156,12 +177,13 @@ namespace HospitalSystemManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(429, 350);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtNumOfRoom);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtNameOfFloower);
-            this.Controls.Add(this.btnSaveFllower);
+            this.Controls.Add(this.txtNameOfFloor);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddOrEditFloors";
@@ -175,16 +197,16 @@ namespace HospitalSystemManagement
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblCloseFllower;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSaveFllower;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtNumOfRoom;
-        private System.Windows.Forms.TextBox txtNameOfFloower;
-        private Label lblCloaseFllower;
+        private System.Windows.Forms.TextBox txtNameOfFloor;
+        private Panel panel1;
+        private Label lblClose;
+        private Label Floor;
+        private Button btnUpdate;
     }
 }

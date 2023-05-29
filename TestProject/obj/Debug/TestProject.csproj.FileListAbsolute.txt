@@ -1,0 +1,24 @@
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\TestProject.dll.config
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\TestProject.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\TestProject.pdb
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\EntityFramework.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\HospitalSystemManagement.exe
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\DGV Printer.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\HospitalSystemManagement.pdb
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\HospitalSystemManagement.exe.config
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\EntityFramework.xml
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\obj\Debug\TestProject.csproj.AssemblyReference.cache
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\obj\Debug\TestProject.csproj.CoreCompileInputs.cache
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\obj\Debug\TestProject.csproj.CopyComplete
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\obj\Debug\TestProject.dll
+F:\ITI\Advanced C#\HospitalSystemManagement\TestProject\obj\Debug\TestProject.pdb

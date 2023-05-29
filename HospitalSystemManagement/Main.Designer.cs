@@ -46,6 +46,10 @@ namespace HospitalSystemManagement
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnReception = new System.Windows.Forms.Button();
+            this.btnMedical = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -60,6 +64,8 @@ namespace HospitalSystemManagement
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -82,7 +88,7 @@ namespace HospitalSystemManagement
             this.btnExit.Font = new System.Drawing.Font("Pangolin", 14.25F);
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(48, 474);
+            this.btnExit.Location = new System.Drawing.Point(50, 550);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(133, 42);
             this.btnExit.TabIndex = 42;
@@ -98,7 +104,7 @@ namespace HospitalSystemManagement
             this.btnLogout.Font = new System.Drawing.Font("Pangolin", 14.25F);
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(47, 439);
+            this.btnLogout.Location = new System.Drawing.Point(49, 515);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(133, 37);
             this.btnLogout.TabIndex = 40;
@@ -114,7 +120,7 @@ namespace HospitalSystemManagement
             this.btnHistory.Font = new System.Drawing.Font("Pangolin", 14.25F);
             this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(46, 331);
+            this.btnHistory.Location = new System.Drawing.Point(48, 407);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Size = new System.Drawing.Size(133, 34);
             this.btnHistory.TabIndex = 38;
@@ -130,7 +136,7 @@ namespace HospitalSystemManagement
             this.btnProfile.Font = new System.Drawing.Font("Pangolin", 14.25F);
             this.btnProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(46, 400);
+            this.btnProfile.Location = new System.Drawing.Point(48, 476);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(133, 38);
             this.btnProfile.TabIndex = 36;
@@ -267,12 +273,16 @@ namespace HospitalSystemManagement
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(214, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 556);
+            this.panel2.Size = new System.Drawing.Size(472, 666);
             this.panel2.TabIndex = 3;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.btnMedical);
+            this.panel1.Controls.Add(this.pictureBox14);
+            this.panel1.Controls.Add(this.btnInventory);
+            this.panel1.Controls.Add(this.pictureBox15);
             this.panel1.Controls.Add(this.btnReception);
             this.panel1.Controls.Add(this.pictureBox13);
             this.panel1.Controls.Add(this.btnExit);
@@ -302,7 +312,7 @@ namespace HospitalSystemManagement
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 556);
+            this.panel1.Size = new System.Drawing.Size(214, 666);
             this.panel1.TabIndex = 2;
             // 
             // btnReception
@@ -312,7 +322,7 @@ namespace HospitalSystemManagement
             this.btnReception.Font = new System.Drawing.Font("Pangolin", 14.25F);
             this.btnReception.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
             this.btnReception.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReception.Location = new System.Drawing.Point(46, 364);
+            this.btnReception.Location = new System.Drawing.Point(48, 440);
             this.btnReception.Name = "btnReception";
             this.btnReception.Size = new System.Drawing.Size(133, 36);
             this.btnReception.TabIndex = 44;
@@ -321,11 +331,65 @@ namespace HospitalSystemManagement
             this.btnReception.UseVisualStyleBackColor = true;
             this.btnReception.Click += new System.EventHandler(this.btnReception_Click);
             // 
+            // btnMedical
+            // 
+            this.btnMedical.FlatAppearance.BorderSize = 0;
+            this.btnMedical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedical.Font = new System.Drawing.Font("Pangolin", 14.25F);
+            this.btnMedical.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
+            this.btnMedical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedical.Location = new System.Drawing.Point(49, 362);
+            this.btnMedical.Name = "btnMedical";
+            this.btnMedical.Size = new System.Drawing.Size(159, 36);
+            this.btnMedical.TabIndex = 48;
+            this.btnMedical.Text = "Medical History";
+            this.btnMedical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMedical.UseVisualStyleBackColor = true;
+            this.btnMedical.Click += new System.EventHandler(this.btnMedical_Click);
+            // 
+            // btnInventory
+            // 
+            this.btnInventory.FlatAppearance.BorderSize = 0;
+            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventory.Font = new System.Drawing.Font("Pangolin", 14.25F);
+            this.btnInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(187)))), ((int)(((byte)(178)))));
+            this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventory.Location = new System.Drawing.Point(49, 329);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(133, 34);
+            this.btnInventory.TabIndex = 46;
+            this.btnInventory.Text = "Inventory";
+            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInventory.UseVisualStyleBackColor = true;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.medical;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox14.Location = new System.Drawing.Point(22, 370);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(26, 22);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 47;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.inventory;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox15.Location = new System.Drawing.Point(23, 335);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(26, 22);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 45;
+            this.pictureBox15.TabStop = false;
+            // 
             // pictureBox13
             // 
             this.pictureBox13.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.reservation;
             this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.Location = new System.Drawing.Point(19, 372);
+            this.pictureBox13.Location = new System.Drawing.Point(21, 448);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(26, 22);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -336,7 +400,7 @@ namespace HospitalSystemManagement
             // 
             this.pictureBox12.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.exit;
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Location = new System.Drawing.Point(20, 484);
+            this.pictureBox12.Location = new System.Drawing.Point(22, 561);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(26, 22);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +411,7 @@ namespace HospitalSystemManagement
             // 
             this.pictureBox11.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.history;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Location = new System.Drawing.Point(20, 337);
+            this.pictureBox11.Location = new System.Drawing.Point(22, 413);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(26, 22);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -425,7 +489,7 @@ namespace HospitalSystemManagement
             // 
             this.pictureBox3.BackgroundImage = global::HospitalSystemManagement.Properties.Resources._608_6087418_man_icon_free_icon_man_hd_png_download;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 407);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 483);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(26, 22);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -436,7 +500,7 @@ namespace HospitalSystemManagement
             // 
             this.pictureBox2.BackgroundImage = global::HospitalSystemManagement.Properties.Resources.logout_re;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(20, 444);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 522);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(26, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -469,7 +533,7 @@ namespace HospitalSystemManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 556);
+            this.ClientSize = new System.Drawing.Size(686, 666);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -480,6 +544,8 @@ namespace HospitalSystemManagement
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -527,5 +593,9 @@ namespace HospitalSystemManagement
         private Panel panel1;
         private Button btnReception;
         private PictureBox pictureBox13;
+        private Button btnMedical;
+        private PictureBox pictureBox14;
+        private Button btnInventory;
+        private PictureBox pictureBox15;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalSystemManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace HospitalSystemManagement
 {
     public partial class Profile : Form
     {
+        public static string Username{set;get;}
+        DataContext dataContext;
         public Profile()
         {
             InitializeComponent();
+            dataContext= new DataContext();
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
@@ -32,6 +36,65 @@ namespace HospitalSystemManagement
         private void lblClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            if (Username == "admin") {
+                txtShowPassword.Visible = true;
+                cmBoxShowPassword.Visible = true;
+
+
+                var users = dataContext.Users.Select(u => u).ToList();
+                foreach(UserAdmin userAdmin in users)
+                {
+                    cmBoxShowPassword.Items.Add(userAdmin.Username);
+                }
+            } 
+        }
+
+        private void cmBoxShowPassword_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string user = cmBoxShowPassword.SelectedItem.ToString();
+           txtShowPassword.Text = dataContext.Users.Where(u => u.Username == user).Select(u => u.Password).First();
+        }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            UserAdmin user = dataContext.Users.Where(u => u.Username == Username).Select(u => u).First();
+            if (user.Password == txtOldPassword.Text)
+            {
+                if (txtNewPassword.Text == txtConfirmPassword.Text)
+                {
+                    user.Password = txtNewPassword.Text;
+                    dataContext.SaveChanges();
+                    MessageBox.Show("Password Changed Successfully ");
+                    Close();
+                }
+                else
+                {
+                    lblConfirmPassError.Visible = true;
+                }
+            }
+            else
+            {
+                oldPassError.Visible = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            txtOldPassword.UseSystemPasswordChar= !txtOldPassword.UseSystemPasswordChar;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            txtNewPassword.UseSystemPasswordChar = !txtNewPassword.UseSystemPasswordChar;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            txtConfirmPassword.UseSystemPasswordChar = !txtConfirmPassword.UseSystemPasswordChar;
         }
     }
 }

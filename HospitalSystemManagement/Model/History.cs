@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Project.Model
+namespace HospitalSystemManagement.Model
 {
-    internal class History
+    public class History
     {
         public int ID { get; set; }
         public int PatientId { get; set; }

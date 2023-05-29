@@ -40,6 +40,7 @@ namespace HospitalSystemManagement
             this.btnSaveFllower = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,12 +72,13 @@ namespace HospitalSystemManagement
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(193)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Pangolin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Image = global::HospitalSystemManagement.Properties.Resources.addBig1;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(7, 6);
+            this.label1.Location = new System.Drawing.Point(7, -4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 30);
+            this.label1.Size = new System.Drawing.Size(202, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "     Department";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -95,10 +97,10 @@ namespace HospitalSystemManagement
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(29, 145);
+            this.label3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 25);
+            this.label3.Size = new System.Drawing.Size(123, 34);
             this.label3.TabIndex = 15;
             this.label3.Text = "Description";
             // 
@@ -120,11 +122,11 @@ namespace HospitalSystemManagement
             this.btnSaveFllower.BackColor = System.Drawing.SystemColors.Window;
             this.btnSaveFllower.FlatAppearance.BorderSize = 2;
             this.btnSaveFllower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveFllower.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.btnSaveFllower.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(149)))), ((int)(((byte)(153)))));
-            this.btnSaveFllower.Location = new System.Drawing.Point(169, 298);
+            this.btnSaveFllower.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Bold);
+            this.btnSaveFllower.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSaveFllower.Location = new System.Drawing.Point(169, 279);
             this.btnSaveFllower.Name = "btnSaveFllower";
-            this.btnSaveFllower.Size = new System.Drawing.Size(118, 42);
+            this.btnSaveFllower.Size = new System.Drawing.Size(118, 45);
             this.btnSaveFllower.TabIndex = 13;
             this.btnSaveFllower.Text = "Save";
             this.btnSaveFllower.UseVisualStyleBackColor = false;
@@ -133,10 +135,10 @@ namespace HospitalSystemManagement
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(30, 64);
+            this.label2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 25);
+            this.label2.Size = new System.Drawing.Size(73, 34);
             this.label2.TabIndex = 12;
             this.label2.Text = "Name";
             // 
@@ -145,13 +147,30 @@ namespace HospitalSystemManagement
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(82, 241);
+            this.lblError.Location = new System.Drawing.Point(82, 236);
             this.lblError.Name = "lblError";
             this.lblError.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblError.Size = new System.Drawing.Size(304, 28);
+            this.lblError.Size = new System.Drawing.Size(281, 28);
             this.lblError.TabIndex = 35;
-            this.lblError.Text = "Invalid Username or Password  !!!!!!";
+            this.lblError.Text = "Invalid Name or Description  !!!!!!";
             this.lblError.Visible = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Window;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Pangolin", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdate.Location = new System.Drawing.Point(169, 279);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(118, 45);
+            this.btnUpdate.TabIndex = 36;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AddDepartmentForm
             // 
@@ -163,9 +182,10 @@ namespace HospitalSystemManagement
             this.Controls.Add(this.txtDescriptionOfDept);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNameOfDept);
-            this.Controls.Add(this.btnSaveFllower);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnSaveFllower);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddDepartmentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -188,5 +208,6 @@ namespace HospitalSystemManagement
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label label3;
         private Label lblError;
+        private Button btnUpdate;
     }
 }

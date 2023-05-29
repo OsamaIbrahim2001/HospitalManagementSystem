@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Project.Model
+namespace HospitalSystemManagement.Model
 {
-    internal class Room
+    public class Room
     {
         public int ID { get; set; }
         public bool Status { get; set; }=false;

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 
-namespace C_Project.Model
+namespace HospitalSystemManagement.Model
 {
-    internal class DataContext:DbContext
+    public class DataContext:DbContext
     {
         public DataContext():base("HospitalManagementSystem") { }
         public DbSet<Department> Departments { get; set; }
@@ -19,5 +14,17 @@ namespace C_Project.Model
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<UserAdmin> Users { get; set; }
+        public DbSet<Inventory> Inventories { get; set; }
+        public DbSet<MedicalHistory>MedicalHistories { get; set; }
+
+
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Room>()
+                .HasOptional<Floor>(s => s.Floor)
+                .WithMany()
+                .WillCascadeOnDelete(true);
+        }
     }
 }
