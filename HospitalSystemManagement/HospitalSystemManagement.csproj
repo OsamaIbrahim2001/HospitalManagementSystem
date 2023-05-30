@@ -59,100 +59,105 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDepartmentForm.cs">
+    <Compile Include="BusinessLogic\DepartmentLogic.cs" />
+    <Compile Include="BusinessLogic\FloorLogic.cs" />
+    <Compile Include="BusinessLogic\PatientLogic.cs" />
+    <Compile Include="BusinessLogic\PressNumber.cs" />
+    <Compile Include="BusinessLogic\RoomLogic.cs" />
+    <Compile Include="UI\AddDepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDepartmentForm.Designer.cs">
+    <Compile Include="UI\AddDepartmentForm.Designer.cs">
       <DependentUpon>AddDepartmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDoctorForm.cs">
+    <Compile Include="UI\AddDoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDoctorForm.Designer.cs">
+    <Compile Include="UI\AddDoctorForm.Designer.cs">
       <DependentUpon>AddDoctorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddInventoryForm.cs">
+    <Compile Include="UI\AddInventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddInventoryForm.Designer.cs">
+    <Compile Include="UI\AddInventoryForm.Designer.cs">
       <DependentUpon>AddInventoryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddOrEditFloors.cs">
+    <Compile Include="UI\AddOrEditFloors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddOrEditFloors.Designer.cs">
+    <Compile Include="UI\AddOrEditFloors.Designer.cs">
       <DependentUpon>AddOrEditFloors.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPatientForm.cs">
+    <Compile Include="UI\AddPatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPatientForm.Designer.cs">
+    <Compile Include="UI\AddPatientForm.Designer.cs">
       <DependentUpon>AddPatientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPaymentForm.cs">
+    <Compile Include="UI\AddPaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPaymentForm.Designer.cs">
+    <Compile Include="UI\AddPaymentForm.Designer.cs">
       <DependentUpon>AddPaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddRoom.cs">
+    <Compile Include="UI\AddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddRoom.Designer.cs">
+    <Compile Include="UI\AddRoom.Designer.cs">
       <DependentUpon>AddRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStaffForm.cs">
+    <Compile Include="UI\AddStaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddStaffForm.Designer.cs">
+    <Compile Include="UI\AddStaffForm.Designer.cs">
       <DependentUpon>AddStaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartmentForm.cs">
+    <Compile Include="UI\DepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartmentForm.Designer.cs">
+    <Compile Include="UI\DepartmentForm.Designer.cs">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorForm.cs">
+    <Compile Include="UI\DoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoctorForm.Designer.cs">
+    <Compile Include="UI\DoctorForm.Designer.cs">
       <DependentUpon>DoctorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FloorrsOfHospital.cs">
+    <Compile Include="UI\FloorrsOfHospital.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FloorrsOfHospital.Designer.cs">
+    <Compile Include="UI\FloorrsOfHospital.Designer.cs">
       <DependentUpon>FloorrsOfHospital.cs</DependentUpon>
     </Compile>
-    <Compile Include="HistoryForm.cs">
+    <Compile Include="UI\HistoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HistoryForm.Designer.cs">
+    <Compile Include="UI\HistoryForm.Designer.cs">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="InventoryForm.cs">
+    <Compile Include="UI\InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InventoryForm.Designer.cs">
+    <Compile Include="UI\InventoryForm.Designer.cs">
       <DependentUpon>InventoryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="UI\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="UI\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="UI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="UI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicalHistoryForm.cs">
+    <Compile Include="UI\MedicalHistoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MedicalHistoryForm.Designer.cs">
+    <Compile Include="UI\MedicalHistoryForm.Designer.cs">
       <DependentUpon>MedicalHistoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202305231946014_init.cs" />
@@ -180,110 +185,110 @@
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\Staff.cs" />
     <Compile Include="Model\UserAdmin.cs" />
-    <Compile Include="PatientForm.cs">
+    <Compile Include="UI\PatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientForm.Designer.cs">
+    <Compile Include="UI\PatientForm.Designer.cs">
       <DependentUpon>PatientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentForm.cs">
+    <Compile Include="UI\PaymentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentForm.Designer.cs">
+    <Compile Include="UI\PaymentForm.Designer.cs">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrinterReports\PrintReports.cs" />
-    <Compile Include="PrintForm.cs">
+    <Compile Include="BusinessLogic\PrintReports.cs" />
+    <Compile Include="UI\PrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrintForm.Designer.cs">
+    <Compile Include="UI\PrintForm.Designer.cs">
       <DependentUpon>PrintForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profile.cs">
+    <Compile Include="UI\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile.Designer.cs">
+    <Compile Include="UI\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reservation.cs">
+    <Compile Include="UI\Reservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reservation.Designer.cs">
+    <Compile Include="UI\Reservation.Designer.cs">
       <DependentUpon>Reservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddMedicalForm.cs">
+    <Compile Include="UI\AddMedicalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddMedicalForm.Designer.cs">
+    <Compile Include="UI\AddMedicalForm.Designer.cs">
       <DependentUpon>AddMedicalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="InveForm.cs">
+    <Compile Include="UI\InveForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InveForm.Designer.cs">
+    <Compile Include="UI\InveForm.Designer.cs">
       <DependentUpon>InveForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RoomForm.cs">
+    <Compile Include="UI\RoomForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RoomForm.Designer.cs">
+    <Compile Include="UI\RoomForm.Designer.cs">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StaffForm.cs">
+    <Compile Include="UI\StaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StaffForm.Designer.cs">
+    <Compile Include="UI\StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test\Calc.cs" />
-    <EmbeddedResource Include="AddDepartmentForm.resx">
+    <Compile Include="BusinessLogic\UserLogic.cs" />
+    <EmbeddedResource Include="UI\AddDepartmentForm.resx">
       <DependentUpon>AddDepartmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDoctorForm.resx">
+    <EmbeddedResource Include="UI\AddDoctorForm.resx">
       <DependentUpon>AddDoctorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddInventoryForm.resx">
+    <EmbeddedResource Include="UI\AddInventoryForm.resx">
       <DependentUpon>AddInventoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddOrEditFloors.resx">
+    <EmbeddedResource Include="UI\AddOrEditFloors.resx">
       <DependentUpon>AddOrEditFloors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPatientForm.resx">
+    <EmbeddedResource Include="UI\AddPatientForm.resx">
       <DependentUpon>AddPatientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPaymentForm.resx">
+    <EmbeddedResource Include="UI\AddPaymentForm.resx">
       <DependentUpon>AddPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddRoom.resx">
+    <EmbeddedResource Include="UI\AddRoom.resx">
       <DependentUpon>AddRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStaffForm.resx">
+    <EmbeddedResource Include="UI\AddStaffForm.resx">
       <DependentUpon>AddStaffForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepartmentForm.resx">
+    <EmbeddedResource Include="UI\DepartmentForm.resx">
       <DependentUpon>DepartmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorForm.resx">
+    <EmbeddedResource Include="UI\DoctorForm.resx">
       <DependentUpon>DoctorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FloorrsOfHospital.resx">
+    <EmbeddedResource Include="UI\FloorrsOfHospital.resx">
       <DependentUpon>FloorrsOfHospital.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HistoryForm.resx">
+    <EmbeddedResource Include="UI\HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InventoryForm.resx">
+    <EmbeddedResource Include="UI\InventoryForm.resx">
       <DependentUpon>InventoryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="UI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="UI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MedicalHistoryForm.resx">
+    <EmbeddedResource Include="UI\MedicalHistoryForm.resx">
       <DependentUpon>MedicalHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305231946014_init.resx">
@@ -295,16 +300,16 @@
     <EmbeddedResource Include="Migrations\202305280523487_init2.resx">
       <DependentUpon>202305280523487_init2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientForm.resx">
+    <EmbeddedResource Include="UI\PatientForm.resx">
       <DependentUpon>PatientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentForm.resx">
+    <EmbeddedResource Include="UI\PaymentForm.resx">
       <DependentUpon>PaymentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrintForm.resx">
+    <EmbeddedResource Include="UI\PrintForm.resx">
       <DependentUpon>PrintForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profile.resx">
+    <EmbeddedResource Include="UI\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -317,19 +322,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reservation.resx">
+    <EmbeddedResource Include="UI\Reservation.resx">
       <DependentUpon>Reservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddMedicalForm.resx">
+    <EmbeddedResource Include="UI\AddMedicalForm.resx">
       <DependentUpon>AddMedicalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InveForm.resx">
+    <EmbeddedResource Include="UI\InveForm.resx">
       <DependentUpon>InveForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RoomForm.resx">
+    <EmbeddedResource Include="UI\RoomForm.resx">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StaffForm.resx">
+    <EmbeddedResource Include="UI\StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

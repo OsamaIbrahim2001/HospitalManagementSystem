@@ -1,4 +1,5 @@
 ﻿using HospitalSystemManagement.Model;
+using HospitalSystemManagement.Test;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -17,7 +18,14 @@ namespace HospitalSystemManagement
         static void Main()
         {
             // Release Stage
+            UserLogic users = new UserLogic();
+            if(users.getAllUsers().Count()==0)
+            {
+                users.AddUser("osama","123");
+                users.AddUser("admin", "123");
+            }
             
+
               Database.SetInitializer<DataContext>(new MigrateDatabaseToLatestVersion<DataContext, Migrations.Configuration>());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
