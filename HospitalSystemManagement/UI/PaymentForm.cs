@@ -24,9 +24,7 @@ namespace HospitalSystemManagement
             fillPaymentData();
         }
         void fillPaymentData() {
-            IEnumerable<Payments> payments = dataContext.Payments.Select(pay => pay).ToList();
-            dgvPayment.DataSource = payments;
-            dgvPayment.RefreshEdit();
+            dgvPayment.DataSource = dataContext.Payments.Select(pay => pay).ToList();
         }
         private void txtSearch_Enter(object sender, EventArgs e)
         {

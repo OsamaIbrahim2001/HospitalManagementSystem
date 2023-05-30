@@ -236,6 +236,7 @@ namespace HospitalSystemManagement
             this.btnUpdate.TabIndex = 75;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
             // btnDone
             // 
@@ -252,6 +253,7 @@ namespace HospitalSystemManagement
             this.btnDone.TabIndex = 76;
             this.btnDone.Text = "Add";
             this.btnDone.UseVisualStyleBackColor = false;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click_1);
             // 
             // AddPaymentForm
             // 
@@ -259,7 +261,6 @@ namespace HospitalSystemManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(468, 425);
-            this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPatientName);
             this.Controls.Add(this.lblError);
@@ -274,6 +275,7 @@ namespace HospitalSystemManagement
             this.Controls.Add(this.cmBoxPatientName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDone);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPaymentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

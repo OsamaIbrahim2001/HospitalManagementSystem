@@ -63,21 +63,7 @@ namespace HospitalSystemManagement
 
         private void btnDone_Click(object sender, EventArgs e)
         {
-            int index=cmBoxPatientName.SelectedIndex;
-            if (index < 0)
-            {
-                MessageBox.Show("Must choose the patient name !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else{
-                Patient patient = getPatients()[index];
-                double total=double.Parse(txtTotal.Text);
-                double paymented = double.Parse(txtPaymented.Text);
-                double remained = double.Parse(txtRemained.Text);
-                bool status = remained > 0 ? true : false;
-                dataContext.Payments.Add(new Payments{ PatientID=patient.ID,PatientName=patient.Name,Date=dateTimePicker1.Value,Total=total,Paymented=paymented,Remained=remained,Status=status });
-                dataContext.SaveChanges();
-                Close();
-            }
+            
         }
 
         private void txtRemained_KeyPress(object sender, KeyPressEventArgs e)
@@ -126,15 +112,40 @@ namespace HospitalSystemManagement
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+           
+
+        }
+
+        private void btnDone_Click_1(object sender, EventArgs e)
+        {
+            int index = cmBoxPatientName.SelectedIndex;
+            if (index < 0)
+            {
+                MessageBox.Show("Must choose the patient name !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Patient patient = getPatients()[index];
+                double total = double.Parse(txtTotal.Text);
+                double paymented = double.Parse(txtPaymented.Text);
+                double remained = double.Parse(txtRemained.Text);
+                bool status = remained == 0 ? true : false;
+                dataContext.Payments.Add(new Payments { PatientID = patient.ID, PatientName = patient.Name, Date = dateTimePicker1.Value, Total = total, Paymented = paymented, Remained = remained, Status = status });
+                dataContext.SaveChanges();
+                Close();
+            }
+        }
+
+        private void btnUpdate_Click_1(object sender, EventArgs e)
+        {
             Payments pay = dataContext.Payments.Where(p => p.ID == payment.ID).First();
             pay.Total = double.Parse(txtTotal.Text);
             pay.Paymented = double.Parse(txtPaymented.Text);
             pay.Remained = double.Parse(txtRemained.Text);
-            pay.Status=double.Parse(txtRemained.Text)>0?false:true;
+            pay.Status = double.Parse(txtRemained.Text) == 0 ? true : false;
             pay.Date = dateTimePicker1.Value;
             dataContext.SaveChanges();
             Close();
-
         }
     }
 }
